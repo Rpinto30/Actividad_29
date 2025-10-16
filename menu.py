@@ -1,18 +1,22 @@
-
+from funcinoes import *
 while True:
-    print("Menu de metodos de ordenamiento\n"
-          "1. Carrera de buses (Quicksort vs sort)\n"
-          "2. juego 1 contra 1 (Bogo)\n"
-          "3. Ordenar edades \n"
-          "4. Salir")
+    print("Menu de metodos de ordenamiento".center(50, "=")+
+          "\n1. Ordenar lista usando BubbleSort\n"
+          "2. Numero aleatorio usando BogoSort\n"
+          "3. Ordenar edades con Select\n"
+          "4. Ordenar lista con Quicksort"
+          "5. Salir")
     select = (input("selecciona una opcion: "))
     match select:
         case "1":
-            pass
+            print(f"La lista ordenada está lista! {bubble(pedir())}")
         case "2":
-            pass
+            print(bogo(pedir()))
         case "3":
-            pass
+            print(sort(pedir()))
         case "4":
+            print(quicksort(pedir()))
+        case "5":
             print("Saliendo del sistema")
             break
+        case _: break
