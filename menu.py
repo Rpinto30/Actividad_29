@@ -2,7 +2,7 @@
 while True:
     print("Menu de metodos de ordenamiento\n"
           "1. Carrera de buses (Quicksort vs sort)\n"
-          "2. Rifa (Bogo)\n"
+          "2. juego 1 contra 1 (Bogo)\n"
           "3. Ordenar edades \n"
           "4. Salir")
     select = (input("selecciona una opcion: "))

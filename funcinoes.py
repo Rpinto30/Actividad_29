@@ -5,6 +5,7 @@ def bubble(lista):
             if lista[i] > lista[j]:
                 lista[i], lista[j] = lista[j], lista[i]
     return lista
+bubble([14, 18, 13, 11, 8, 50, 25])
 
 def sort(lista):
     for i in range(len(lista)-1):
@@ -28,4 +29,6 @@ def bogo(lista):
         random.shuffle(lista)
         print(f"{lista}".center(150))
         intentos += 1
-    return f"{lista}, intentos {intentos}"
+    return f"{lista}, El numero ganador de la rifa es {intentos}"
+bogo([8, 9, 6, 3])
+
